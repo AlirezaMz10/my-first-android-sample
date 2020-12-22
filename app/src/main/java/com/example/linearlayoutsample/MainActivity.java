@@ -26,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
                 String n2 = edt2.getText() + "";
 
                 TextView txt = findViewById(R.id.txtResult);
-                txt.setText(Integer.parseInt(n1) + Integer.parseInt(n2) + "");
+                if (!n1.equals("") && !n2.equals("")) {
+                    txt.setText(Integer.parseInt(n1) + Integer.parseInt(n2) + "");
+                } else {
+                    txt.setText("Please Fill Numbers");
+                }
             }
         });
 
@@ -41,7 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 String n2 = edt2.getText() + "";
 
                 TextView txt = findViewById(R.id.txtResult);
-                txt.setText(Integer.parseInt(n1) - Integer.parseInt(n2) + "");
+                if (!n1.equals("") && !n2.equals("")) {
+                    txt.setText(Integer.parseInt(n1) - Integer.parseInt(n2) + "");
+                } else {
+                    txt.setText("Please Fill Numbers");
+                }
             }
         });
 
@@ -56,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
                 String n2 = edt2.getText() + "";
 
                 TextView txt = findViewById(R.id.txtResult);
-                txt.setText(Integer.parseInt(n1) * Integer.parseInt(n2) + "");
+                if (!n1.equals("") && !n2.equals("")) {
+                    txt.setText(Integer.parseInt(n1) * Integer.parseInt(n2) + "");
+                } else {
+                    txt.setText("Please Fill Numbers");
+                }
             }
         });
 
@@ -71,7 +83,11 @@ public class MainActivity extends AppCompatActivity {
                 String n2 = edt2.getText() + "";
 
                 TextView txt = findViewById(R.id.txtResult);
-                txt.setText(Integer.parseInt(n1) / Integer.parseInt(n2) + "");
+                if (!n1.equals("") && !n2.equals("")) {
+                    txt.setText(Integer.parseInt(n1) / Integer.parseInt(n2) + "");
+                } else {
+                    txt.setText("Please Fill Numbers");
+                }
             }
         });
     }

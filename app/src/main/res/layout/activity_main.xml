@@ -18,14 +18,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Enter First Number" />
+            android:hint="Enter First Number"
+            android:inputType="numberSigned" />
 
         <EditText
             android:id="@+id/edtNumberTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Enter Second Number" />
+            android:hint="Enter Second Number"
+            android:inputType="numberSigned" />
 
     </LinearLayout>
 
